@@ -4,7 +4,7 @@ from firebase_admin import messaging
 
 firebase_admin.initialize_app()
 
-registration_token = input("Please input target device key token:")
+registration_token = input("Please input target device key token: ")
 data_notification = messaging.Message(
     token = registration_token,
     notification=messaging.Notification(
